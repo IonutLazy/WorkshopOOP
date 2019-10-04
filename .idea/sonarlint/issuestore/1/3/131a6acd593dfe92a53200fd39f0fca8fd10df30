@@ -1,0 +1,7 @@
+
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(ô„¬˜
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÜÍŒÂùÿÿÿÿ
+Tsquid:S1118":Add a private constructor to hide the implicit public one.(­’ü³üÿÿÿÿ
+rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(óŽù®üÿÿÿÿ
