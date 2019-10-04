@@ -2,6 +2,9 @@ package com.company.encapsulation;
 
 /**
  * Created by lazaric on 22.04.2019.
+ *
+ * Encapsulation binds data and its related methods together within a class.
+ * It also protects the data by making fields private and giving access to them only through their related methods.
  */
 public class Person {
     private int age;
