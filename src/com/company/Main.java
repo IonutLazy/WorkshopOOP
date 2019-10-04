@@ -1,24 +1,24 @@
 package com.company;
 
-import com.company.Abstraction.AbstractClass.Contractor;
-import com.company.Abstraction.AbstractClass.Employee;
-import com.company.Abstraction.AbstractClass.FullTimeWorker;
-import com.company.Abstraction.Interfaces.Bicycle;
-import com.company.Abstraction.Interfaces.Car;
-import com.company.Abstraction.Interfaces.Vehicle;
-import com.company.Encapsulation.Person;
-import com.company.Inheritance.ChildClass;
-import com.company.Inheritance.GrandChild;
-import com.company.Polymorphism.Overload.Overloading;
-import com.company.Polymorphism.Override.Animal;
-import com.company.Polymorphism.Override.Bird;
+import com.company.abstraction.abstract_class.Contractor;
+import com.company.abstraction.abstract_class.Employee;
+import com.company.abstraction.abstract_class.FullTimeWorker;
+import com.company.abstraction.interfaces.Bicycle;
+import com.company.abstraction.interfaces.Car;
+import com.company.abstraction.interfaces.Vehicle;
+import com.company.encapsulation.Person;
+import com.company.inheritance.ChildClass;
+import com.company.inheritance.GrandChild;
+import com.company.polymorphism.overload.Overloading;
+import com.company.polymorphism.override.Animal;
+import com.company.polymorphism.override.Bird;
 
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
 
-        //Encapsulation
+        //encapsulation
         Person person = new Person();
         person.setAge(15);
         person.setHeight(155);
@@ -27,7 +27,7 @@ public class Main {
 
         System.out.println(person.getName() + " is a " + person.getAge() + " year old " + person.getSex() + " with a height of " + person.getHeight());
 
-        //Inheritance
+        //inheritance
         ChildClass child = new ChildClass();
         child.doSomething();
 
@@ -35,8 +35,8 @@ public class Main {
         grandChild.doSomething();
 
 
-        //Polymorphism
-        //Override
+        //polymorphism
+        //override
 
         Animal animal = new Animal();
         animal.startMoving();
@@ -50,7 +50,7 @@ public class Main {
         Overloading.singASong("Highway to hell", 2);
 
 
-        //Abstraction
+        //abstraction
         System.out.println("Print the daily salary of a full time worker");
         Employee fulltimeWorker = new FullTimeWorker("Jimmy", 10);
         System.out.println(fulltimeWorker.calculateSalary());
