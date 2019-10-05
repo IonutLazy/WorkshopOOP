@@ -16,7 +16,6 @@ import com.company.polymorphism.override.Bird;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
 
         //encapsulation
         Person person = new Person();
@@ -33,7 +32,6 @@ public class Main {
 
         GrandChild grandChild = new GrandChild();
         grandChild.doSomething();
-
 
         //polymorphism
         //override
@@ -59,11 +57,25 @@ public class Main {
         Employee contractor = new Contractor("Alice", 5, 5);
         System.out.println(contractor.calculateSalary());
 
-
         Vehicle bicycle = new Bicycle();
         bicycle.startVehicle();
 
         Vehicle car = new Car();
         car.startVehicle();
+
+
+
+        // write your code here and in the exercise package
+        //1. create a Phone abstract class.
+        // Extend it with 5 different real-life phones.
+        // They should have the following attributes: Manufacturer, Model, Screen Size, Battery Size and Price
+        // They should have the following methods: call, take a picture, set alarm, listen to music
+
+        //2. create a Car interface.
+        // It should have the following methods: unlock car, start car, shift gear, lock car
+        // Implement this interface for the following types of cars: that have both regular unlocking as well as keyless unlocking, regular keys or keyless go, manual and automatic transmission
+
+        //3. Create a Parent class containing a method and a Child class that extends it.
+        // Override that methods and Overload it with multiple implementations
     }
 }
