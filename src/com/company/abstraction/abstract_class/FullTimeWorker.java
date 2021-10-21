@@ -14,7 +14,7 @@ public class FullTimeWorker extends Employee {
     }
 
     @Override
-    public int calculateSalary() {
-        return getPaymentPerHour() * 8;
+    public int calculatePayment() {
+        return 8 * getPaymentPerHour();
     }
 }

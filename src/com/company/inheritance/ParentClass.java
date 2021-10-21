@@ -6,7 +6,7 @@ package com.company.inheritance;
  * This is a parent class.
  */
 public class ParentClass {
-    public void doSomething() {
+    public void parentMethod() {
         System.out.println("Method from parent class");
     }
 }

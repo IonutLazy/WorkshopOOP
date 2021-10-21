@@ -8,7 +8,7 @@ package com.company.polymorphism.override;
  */
 public class Bird extends Animal {
     @Override
-    public void startMoving() {
+    public void move() {
         System.out.println("Start flapping wings");
     }
 }

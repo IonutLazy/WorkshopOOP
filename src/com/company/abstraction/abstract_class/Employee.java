@@ -30,5 +30,5 @@ public abstract class Employee {
         this.paymentPerHour = paymentPerHour;
     }
 
-    public abstract int calculateSalary();
+    public abstract int calculatePayment();
 }

@@ -6,5 +6,5 @@ package com.company.abstraction.interfaces;
  * This class is an interface. It must be implemented by another class using the "implements" keyword.
  */
 public interface Vehicle {
-    void startVehicle();
+    void signalTurn(String direction);
 }

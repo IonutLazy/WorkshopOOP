@@ -7,17 +7,17 @@ package com.company.encapsulation;
  * It also protects the data by making fields private and giving access to them only through their related methods.
  */
 public class Person {
-    private int age;
+    private String nationality;
     private int height;
-    private String name;
-    private String sex;
+    private String occupation;
+    private int age;
 
-    public int getAge() {
-        return age;
+    public String getNationality() {
+        return nationality;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setNationality(String nationality) {
+        this.nationality = nationality;
     }
 
     public int getHeight() {
@@ -28,19 +28,26 @@ public class Person {
         this.height = height;
     }
 
-    public String getName() {
-        return name;
+    public String getOccupation() {
+        return occupation;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setOccupation(String occupation) {
+        this.occupation = occupation;
     }
 
-    public String getSex() {
-        return sex;
+    public int getAge() {
+        return age;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public Person(String nationality, int height, String occupation, int age) {
+        this.nationality = nationality;
+        this.height = height;
+        this.occupation = occupation;
+        this.age = age;
     }
 }

@@ -8,9 +8,9 @@ package com.company.abstraction.interfaces;
  */
 public class Car implements Vehicle {
     @Override
-    public void startVehicle() {
+    public void signalTurn(String direction) {
         System.out.println(
-                "Turn the key in the ignition"
+                "use turn signals to the " + direction
         );
     }
 }

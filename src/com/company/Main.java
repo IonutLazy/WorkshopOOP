@@ -19,30 +19,26 @@ public class Main {
 	// write your code here
 
         //encapsulation
-        Person person = new Person();
-        person.setAge(15);
-        person.setHeight(155);
-        person.setName("Vasile");
-        person.setSex("Male");
+        Person person = new Person("romanian", 174, "bus driver", 27);
 
-        System.out.println(person.getName() + " is a " + person.getAge() + " year old " + person.getSex() + " with a height of " + person.getHeight());
+        System.out.println("This " + person.getOccupation() + " is a " + person.getAge() + " year old " + person.getNationality());
 
         //inheritance
         ChildClass child = new ChildClass();
-        child.doSomething();
+        child.parentMethod();
 
         GrandChild grandChild = new GrandChild();
-        grandChild.doSomething();
+        grandChild.parentMethod();
 
 
         //polymorphism
         //override
 
         Animal animal = new Animal();
-        animal.startMoving();
+        animal.move();
 
         Bird bird = new Bird();
-        bird.startMoving();
+        bird.move();
         bird.stop();
 
         //Overloading
@@ -52,18 +48,18 @@ public class Main {
 
         //abstraction
         System.out.println("Print the daily salary of a full time worker");
-        Employee fulltimeWorker = new FullTimeWorker("Jimmy", 10);
-        System.out.println(fulltimeWorker.calculateSalary());
+        Employee fulltimeWorker = new FullTimeWorker("John", 10);
+        System.out.println(fulltimeWorker.calculatePayment());
 
         System.out.println("Print the daily salary of a contractor");
-        Employee contractor = new Contractor("Alice", 5, 5);
-        System.out.println(contractor.calculateSalary());
+        Employee contractor = new Contractor("Aloy", 5, 5);
+        System.out.println(contractor.calculatePayment());
 
 
         Vehicle bicycle = new Bicycle();
-        bicycle.startVehicle();
+        bicycle.signalTurn("left");
 
         Vehicle car = new Car();
-        car.startVehicle();
+        car.signalTurn("right");
     }
 }

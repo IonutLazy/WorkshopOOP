@@ -9,7 +9,7 @@ package com.company.abstraction.interfaces;
  */
 public class Bicycle implements Vehicle {
     @Override
-    public void startVehicle() {
-        System.out.println("Start pedalling");
+    public void signalTurn(String direction) {
+        System.out.println("raise " + direction + " arm");
     }
 }

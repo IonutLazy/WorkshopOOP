@@ -16,7 +16,7 @@ public class Contractor extends Employee {
     }
 
     @Override
-    public int calculateSalary() {
-        return getPaymentPerHour() * workingHours;
+    public int calculatePayment() {
+        return workingHours * getPaymentPerHour();
     }
 }

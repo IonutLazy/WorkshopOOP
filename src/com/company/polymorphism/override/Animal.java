@@ -7,7 +7,7 @@ package com.company.polymorphism.override;
  */
 public class Animal {
 
-    public void startMoving() {
+    public void move() {
         System.out.println("Start walking");
     }
 
